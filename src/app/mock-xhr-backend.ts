@@ -1,6 +1,8 @@
 import { HttpEvent, HttpRequest, HttpResponse, HttpBackend } from '@angular/common/http';
 import { Observable, Observer } from 'rxjs';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class MockXHRBackend implements HttpBackend {
   private mediaItems = [
     {
